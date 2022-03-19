@@ -1,0 +1,5 @@
+#FROM node:14.16-alpine
+#WORKDIR /frontend_
+#ENV PATH="./node_modules/.bin:$PATH"
+#COPY . . 
+#CMD ["npm","run","dev"]

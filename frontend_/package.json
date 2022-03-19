@@ -4,7 +4,7 @@
   "description": "Zentralisieren von Log-Dateien",
   "main": "client.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.debug.js --content-base dev --inline --hot",
+    "dev": "webpack-dev-server --host 0.0.0.0 --config webpack.config.debug.js --content-base dev --inline --hot",
     "build:prod": "webpack -p --progress --config webpack.config.js",
     "build:dev": "webpack --config webpack.config.debug.js",
     "test": "jest",

@@ -1,7 +1,10 @@
 FROM node:14.16-alpine
-WORKDIR /frontend_
-ENV PATH="./node_modules/.bin:$PATH"
-COPY . . 
+WORKDIR /app
+COPY package.json ./
+RUN npm install
+COPY . ./
 RUN npm run build:dev
-CMD ["npm","run","dev"]
-EXPOSE 8080
+
+CMD ["npm", "run", "dev"]
+
+
